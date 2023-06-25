@@ -58,7 +58,7 @@ class ToyStore {
     }
 
     private void writeToFile(Toy toy) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("prize_toys.txt", true))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("Java_project/prize_toys.txt", true))) {
             writer.write(toy.getId() + "," + toy.getName());
             writer.newLine();
         } catch (IOException e) {
